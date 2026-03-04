@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Carrijo - Desenvolvedor | Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="header">
+    <a href="#" class="logo">&lt;Dev/Matheus Philippsen Carrijo&gt;</a>
+    <nav class="nav">
+        </nav>
+
+    <div class="lang-selector">
+    <button id="lang-br" class="lang-btn active-lang" data-lang="pt" title="Português">
+         <img src="bandeira do brasil.png" alt="Brasil" style="width: 30px; height: auto;">
+        <span style="font-size: 1.5rem;">🇧🇷</span>
+    </button>
+    <span>|</span>
+    <button id="lang-en" class="lang-btn" data-lang="en" title="English">
+        <img src="bandeira da inglaterra.png" alt="English" style="width: 30px; height: auto;">
+        <span style="font-size: 1.5rem;">🇺🇸</span>
+    </button>
+</div>
+
+    <button id="mode-toggle" title="Alternar Modo Escuro/Claro">
+        <i class="fas fa-sun"></i> 
+    </button>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="greeting" data-key="heroGreeting">Olá, eu sou</p>
+        <h1 data-key="heroName">Lucas Fernandes</h1>
+        <p class="bio" data-key="heroBio">Apaixonado por criar soluções elegantes e eficientes. Com foco em [Sua Linguagem Principal] e [Seu Framework Principal].</p>
+        <a href="#projetos" class="btn primary-btn" data-key="heroButton">Ver Projetos</a>
+        </div>
+    </section>
+
+    <section id="habilidades" class="skills section">
+    <h2 data-key="skillsTitle">Minhas Habilidades</h2> 
+    <div class="skills-grid">
+            <div class="skill-item">
+                <p>HTML5 & CSS3</p>
+                <div class="bar-container"><div class="bar" data-percent="95"></div></div>
+            </div>
+            <div class="skill-item">
+                <p>JavaScript (ES6+)</p>
+                <div class="bar-container"><div class="bar" data-percent="85"></div></div>
+            </div>
+             <div class="skill-item">
+                <p>Python / Django</p>
+                <div class="bar-container"><div class="bar" data-percent="75"></div></div>
+            </div>
+             <div class="skill-item">
+                <p>React / Vue.js</p>
+                <div class="bar-container"><div class="bar" data-percent="80"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects section">
+    <h2 data-key="projectsTitle">Meus Projetos de Destaque</h2> 
+    <div class="projects-grid">
+            <div class="project-card">
+    <div class="project-overlay">
+        <h3 data-key="project1Title">App de Tarefas (To-Do)</h3>
+        <p data-key="project1Desc">App Front-End feito com React. Foco em UX/UI e componentes reutilizáveis.</p>
+        
+        <div class="project-links">
+            <a href="#" target="_blank" class="btn small-btn" data-key="btnDemo">Demo</a>
+            <a href="#" target="_blank" class="btn small-btn outline-btn">
+                <i class="fab fa-github"></i> <span data-key="btnCode">Código</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="project-card car-shop">
+    <div class="project-overlay">
+        <h3 data-key="project2Title">Loja de Carros</h3>
+        <p data-key="project2Desc">Plataforma de compra e venda de veículos com filtros avançados e catálogo completo.</p>
+        
+        <div class="project-links">
+            <a href="#" target="_blank" class="btn small-btn" data-key="btnDemo">Demo</a>
+            
+            <a href="#" target="_blank" class="btn small-btn outline-btn">
+                <i class="fab fa-github"></i> <span data-key="btnCode">Código</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+            <div class="project-card">
+    <div class="project-overlay">
+        <h3 data-key="project3Title">Landing Page Moderna</h3>
+        <p data-key="project3Desc">Design responsivo e otimizado para conversão, utilizando HTML e CSS puro.</p>
+        
+        <div class="project-links">
+            <a href="#" target="_blank" class="btn small-btn" data-key="btnDemo">Demo</a>
+            
+            <a href="#" target="_blank" class="btn small-btn outline-btn">
+                <i class="fab fa-github"></i> <span data-key="btnCode">Código</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="contact section">
+    <h2 data-key="contactTitle">Vamos Bater um Papo?</h2>
+    <p data-key="contactSubtitle" style="text-align: center;">Entre em contato para orçamentos, parcerias ou apenas para tomar um café.</p>
+        <form id="contact-form">
+    <input type="text" name="name" data-key="formName" placeholder="Seu Nome" required>
+    <input type="email" name="email" data-key="formEmail" placeholder="Seu Email" required>
+    <textarea name="message" data-key="formMessage" placeholder="Sua Mensagem" required></textarea>
+    <button type="submit" class="btn primary-btn" data-key="formSend">Enviar Mensagem</button>
+    
+    <p id="form-message" class="message-feedback"></p>
+</form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Lucas Fernandes de Oliveira. Feito com paixão e código.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
